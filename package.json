@@ -1,0 +1,23 @@
+{
+  "name": "sample-iwa",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:release": "BUILD_TYPE=release vite build && pnpm run build",
+    "preview": "vite preview",
+    "deploy": "./setup-site.sh && pnpm run build && firebase deploy"
+  },
+  "devDependencies": {
+    "@picocss/pico": "^2.1.1",
+    "@types/node": "^24.0.3",
+    "dotenv": "^16.5.0",
+    "rollup": "^4.44.0",
+    "rollup-plugin-webbundle": "^0.2.0",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5",
+    "wbn-sign": "^0.2.1"
+  }
+}
