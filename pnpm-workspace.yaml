@@ -1,0 +1,5 @@
+onlyBuiltDependencies:
+  - esbuild
+# This is needed if you happen to run this with pnpm 9.
+packages:
+  - .
